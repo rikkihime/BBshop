@@ -1,12 +1,31 @@
 
 body {
-    background-color: #000000;
-    font-family: "PT Sans Narrow";
+    
+    
+    font-family: "PT Sans Narrow", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff;
+    min-width: 800px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f8f5f2;
+    background-image: url(../img/catalog-pattern-noise.png);
+    
+    
 }
+
+.index {
+    background-color: #000;
+    background-image: url(../img/barber-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 2560px auto;
+
+    color: #fff;
+}
+
 h1 {
     
 }
@@ -15,7 +34,170 @@ h2 {
 }
 .main-header {
     font-size: 16px;
+    background-color: #000;
+/*    padding: 5px 0;*/
 }
 .container {
+    width: 960px;
+    margin: 0 auto;
+/*    padding: 10px;*/
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.oline {
+    outline: 1px solid yellow;
+}
+.main-navigation {
+    float: left;
+}
+
+.main-navigation ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.main-navigation li {
+    list-style-type: none;
+    float: left;
+}
+
+.main-navigation li a {
+    padding: 20px 20px;
+    display: block;
+}
+
+.user-block {
+    float: right;
+    text-align: right;
+}
+
+.login {
+    padding: 20px 40px;
+    display: block;
+}
+
+.main-container {
+    margin: 10px auto;
+    padding-top: 50px;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 368px;
+    height: 204px;
+    background-image: url(../img/logo-barbershop.png);
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+
+.features-row {
+    margin-bottom: 35px;
+    padding: 5px;
+}
+
+.features-item {
+    min-height: 170px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
     
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.index-content {
+    margin-bottom: 30px;
+    padding: 35px 40px;
+/*    text-align: left;*/
+    background-color: #fff;
+    background-image: url(../img/catalog-pattern-noise.png);
+    color: #000;
+}
+
+.index-content:last-child {
+    margin-bottom: 0;
+}
+
+.content-column-left {
+    float: left;
+    min-height: 300px;
+    width: 340px;
+    text-align: left;
+}
+
+.content-column-right {
+    float: right;
+    min-height: 300px;
+    width: 340px;
+}
+
+.content-column-left li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.main-footer {
+    padding: 20px 0;
+}
+
+.footer-contacts {
+    float: left;
+    min-height: 90px;
+    width: 320px;
+}
+
+.footer-social {
+    float: left;
+    min-height: 90px;
+    width: 190px;
+}
+
+.footer-copyright {
+    float: right;
+    min-height: 90px;
+    width: 150px;
+}
+
+
+
+.filter {
+    float: left;
+    width: 190px;
+    min-height: 580px;
+    margin-left: 10px;
+}
+
+.products {
+    float: right;
+    width: 700px;
+    min-height: 620px;
+}
+
+.product {
+    display: inline-block;
+    vertical-align: top;
+/*    font-size: 14px*/
+    width: 220px;
+    min-height: 300px;
+    margin: 0 5px 5px 0;
+}
+
+.news-preview {
+    padding-left: 0;
+}
+
+.gallery-content {
+    margin: 0;
+}
+
+.filter label {
+    display: block;
 }
