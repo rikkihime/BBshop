@@ -3,10 +3,11 @@ body {
     
     
     font-family: "PT Sans Narrow", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    text-transform: uppercase;
     line-height: 24px;
-    min-width: 800px;
+    min-width: 960px;
     margin: 0;
     padding: 0;
     color: #000;
@@ -17,12 +18,8 @@ body {
 }
 
 .index {
-    background-color: #000;
-    background-image: url(../img/barber-back.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    background: #111 url(../img/barber-back.jpg) no-repeat center top;
     background-size: 2560px auto;
-
     color: #fff;
 }
 
@@ -35,12 +32,12 @@ h2 {
 .main-header {
     font-size: 16px;
     background-color: #000;
-/*    padding: 5px 0;*/
+    margin-bottom: 60px;
 }
 .container {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
-/*    padding: 10px;*/
+    padding: 0 10px;
 }
 .clearfix:after {
     content: "";
@@ -55,18 +52,42 @@ h2 {
 }
 
 .main-navigation ul {
-    margin-top: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-navigation li {
-    list-style-type: none;
     float: left;
 }
 
 .main-navigation li a {
-    padding: 20px 20px;
+    padding: 25px 20px;
     display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+.main-navigation .active a:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 5px;
+    background: #fff;
+}
+
+.main-navigation .active a:hover {
+    background: none;
+}
+
+.main-navigation .active a {
+    position: relative;
 }
 
 .user-block {
@@ -74,9 +95,31 @@ h2 {
     text-align: right;
 }
 
-.login {
-    padding: 20px 40px;
+.user-block a {
+    position: relative;
     display: block;
+    padding: 25px 20px 25px 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-block a:hover {
+    background: #242424;
+}
+
+.user-block a:before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/login-icon-white.png") no-repeat 0 0;
+    opacity: 0.3;
+}
+
+.user-block a:hover:before {
+    opacity: 1;
 }
 
 .main-container {
@@ -86,7 +129,7 @@ h2 {
 
 .logo {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width: 368px;
     height: 204px;
     background-image: url(../img/logo-barbershop.png);
@@ -96,12 +139,10 @@ h2 {
 
 
 .features-row {
-    margin-bottom: 35px;
-    padding: 5px;
+    margin-bottom: 80px;
 }
 
 .features-item {
-    min-height: 170px;
     width: 300px;
     float: left;
     margin-right: 20px;
@@ -113,13 +154,41 @@ h2 {
     margin-right: 0;
 }
 
-.index-content {
+.features-title {
+    position: relative;
+    font-size: 30px;
+    padding-bottom: 50px;
     margin-bottom: 30px;
-    padding: 35px 40px;
-/*    text-align: left;*/
+}
+
+.features-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
     background-color: #fff;
-    background-image: url(../img/catalog-pattern-noise.png);
+    transform: rotate(45deg);
+}
+
+.features-item p {
+    margin: 10px;
+}
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    background-color: #f7f4f1;
+    background:url(../img/vertival-line-index.png) no-repeat center, url(../img/catalog-pattern-noise.png);
     color: #000;
+}
+
+.index-content time {
+    text-transform: none;
+    font-weight: 400;
 }
 
 .index-content:last-child {
@@ -129,43 +198,221 @@ h2 {
 .content-column-left {
     float: left;
     min-height: 300px;
-    width: 340px;
+    width: 350px;
     text-align: left;
 }
 
 .content-column-right {
     float: right;
     min-height: 300px;
-    width: 340px;
+    width: 300px;
 }
 
 .content-column-left li {
     text-align: left;
-    list-style-type: none;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.content-column-title {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 35px;
+
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 33px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+    }
+
+.btn:disabled:hover {
+    background: #000;
+}
+
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    border: 7px solid #fff;
+    background: #ccc;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    width: 140px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.appointment-form  input {
+    width: 106px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+    background: #f9f6f3;
+    outline: none;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.appointment-form  input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form  input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
 }
 
 .main-footer {
-    padding: 20px 0;
-    background-image: url(../img/footer-pattern-noise.png);
-    min-height: 190px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    background: #232323 url(../img/footer-pattern-noise.png);
 }
 
 .footer-contacts {
     float: left;
-    min-height: 90px;
     width: 320px;
+    margin-right: 80px;
 }
 
 .footer-social {
     float: left;
-    min-height: 90px;
-    width: 190px;
+    text-align: center;
 }
 
 .footer-copyright {
     float: right;
-    min-height: 90px;
-    width: 150px;
+    max-width: 320px;
+}
+
+.footer-contacts a {
+    color: #fff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 43px;
+    height: 43px;
+    font-size: 0;
+    text-decoration: none;
+    background: #000 url("img/...") no-repeat center;
+    margin: 0 2px;
+}
+
+/*для спрайта*/
+
+.social-btn-vk {
+    background-position: ;
+}
+
+.social-btn-fb {
+    background-position: ;
+}
+
+.social-btn-inst {
+    background-position: ;
+}
+
+.social-btn-vk:hover {
+    background-position: 9px -902px;
+}
+
+.social-btn-fb:hover {
+    background-position: 16px -619px;
+}
+
+.social-btn-inst:hover {
+    background-position: 11px -762px;
+}
+
+/*----------------------------*/
+
+.social-btn:hover {
+    background-color: #fff;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #000;
+    background: #fff;
 }
 
 .filter {
@@ -223,5 +470,6 @@ h2 {
     float: right;
     width: 400px;
 }
+
 
 
