@@ -344,7 +344,6 @@ h3 {
 .main-footer {
     padding-top: 60px;
     padding-bottom: 40px;
-/*    margin-top: 60px;*/
     background: #232323 url(../img/footer-pattern-noise.png);
     color: #fff;
 }
@@ -600,7 +599,7 @@ h3 {
     min-height: 286px;
     margin: 0px 17px 21px 0;
     background-color: #fff;
-    box-shadow: 0px 0px 17px -5px
+    box-shadow: 0px 0px 17px -5px;
 }
 
 .product:nth-child(3n+3) {
@@ -696,24 +695,103 @@ h3 {
 }
 
 
+/*-------- catalog-item ----------*/
 
+/*-------- item-name ----------*/
 
+.item-name {
+    margin-top: 59px;
+    margin-bottom: 50px;
+}
 
+.item-name h1 {
+    font-size: 30px;
+}
 
-
+/*-------- picture ----------*/
 
 .item-pictures {
     float: left;
     width: 460px;
     min-height: 675px;
-    margin-right: 20px;
-    text-align: center;
+    margin-bottom: 35px;
 }
 
+.item-picture {
+    margin-right: 17px;
+    margin-top: 14px;
+}
+
+.item-picture:last-child {
+    margin-right: 0;
+}
+
+.item-picture-big,
+.item-picture {
+    box-shadow: 0px 0px 17px -5px;
+}
+
+/*-------- description ...  ----------*/
+
 .description {
+    padding-top: 19px;
     float: right;
     width: 400px;
 }
+
+.item-feature {
+    float: left;
+    margin-left: 9px;
+}
+
+.article {
+    float: right;
+    margin-right: 12px;
+    color: #aeaeae;
+}
+
+.description p {
+    margin: 29px 0 36px 9px;
+}
+
+.description .price-and-btn {
+    margin-left: 10px;
+    margin-bottom: 65px;
+}
+
+.description .price {
+    margin: 0;
+}
+
+.description h2 {
+    margin: 0 0 30px 9px;
+    font-size: 24px;
+}
+
+.item-included {
+    padding: 0;
+}
+
+.item-included li {
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+}
+
+.item-included li:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    top: -1px;
+    left: 10px;
+    margin-top: 9px;
+    transform: rotate(45deg);
+}
+
+
 
 
 
