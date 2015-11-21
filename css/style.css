@@ -12,13 +12,13 @@ body {
     padding: 0;
     color: #000;
     background-color: #f8f5f2;
-    background-image: url(../img/catalog-pattern-noise.png);
+    background-image: url("../img/catalog-pattern-noise.png");
     
     
 }
 
 .index {
-    background: #070707 url(../img/barber-back.jpg) no-repeat center top;
+    background: #070707 url("../img/barber-back.jpg") no-repeat center top;
     background-size: 2560px auto;
     color: #fff;
 }
@@ -125,7 +125,7 @@ h3 {
     left: 20px;
     width: 18px;
     height: 18px;
-    background: url('../img/spritesheet.png') -275px -2px no-repeat;
+    background: url("../img/spritesheet.png") -275px -2px no-repeat;
     opacity: 0.3;
 }
 
@@ -143,7 +143,7 @@ h3 {
     margin-bottom: 30px;
     width: 364px;
     height: 204px;
-    background-image: url(../img/logo-barbershop.png);
+    background-image: url("../img/logo-barbershop.png");
     text-indent: 100%;
     overflow: hidden;
 }
@@ -193,7 +193,7 @@ h3 {
     margin-bottom: 35px;
     padding: 53px 80px;
     background-color: #f7f4f1;
-    background:url(../img/vertival-line-index.png) no-repeat center, url(../img/catalog-pattern-noise.png);
+    background:url("../img/vertival-line-index.png") no-repeat center,                            url("../img/catalog-pattern-noise.png");
     color: #000;
 }
 
@@ -346,7 +346,7 @@ h3 {
 .main-footer {
     padding-top: 60px;
     padding-bottom: 40px;
-    background: #232323 url(../img/footer-pattern-noise.png);
+    background: #232323 url("../img/footer-pattern-noise.png");
     color: #fff;
 }
 
@@ -401,27 +401,27 @@ h3 {
 }
 
 .social-btn-vk {
-    background: #000 url('../img/spritesheet.png') -452px 11px no-repeat;
+    background: #000 url("../img/spritesheet.png") -452px 11px no-repeat;
 }
 
 .social-btn-fb {
-    background: #000 url('../img/spritesheet.png') -299px 9px no-repeat;
+    background: #000 url("../img/spritesheet.png") -299px 9px no-repeat;
 }
 
 .social-btn-inst {
-    background: #000 url('../img/spritesheet.png') -367px 10px no-repeat;
+    background: #000 url("../img/spritesheet.png") -367px 10px no-repeat;
 }
 
 .social-btn-vk:hover {
-    background: #fff url('../img/spritesheet.png') -497px 11px no-repeat;
+    background: #fff url("../img/spritesheet.png") -497px 11px no-repeat;
 }
 
 .social-btn-fb:hover {
-    background: #fff url('../img/spritesheet.png') -331px 9px no-repeat;
+    background: #fff url("../img/spritesheet.png") -331px 9px no-repeat;
 }
 
 .social-btn-inst:hover {
-    background: #fff url('../img/spritesheet.png') -408px 10px no-repeat;
+    background: #fff url("../img/spritesheet.png") -408px 10px no-repeat;
 }
 
 .social-btn:hover {
@@ -509,6 +509,11 @@ h3 {
     cursor: pointer;
 }
 
+.filter label:hover,
+.filter label:active {
+    color: #663d15;
+}
+
 .filter input[type="checkbox"] {
     display: none;
 }
@@ -528,11 +533,11 @@ h3 {
     left: 0;
     width: 22px;
     height: 22px;
-    background: url('../img/spritesheet.png') -123px -2px no-repeat;
+    background: url("../img/spritesheet.png") -123px -2px no-repeat;
 }
 
 .filter input[type="checkbox"]:checked + label::before {
-    background: url('../img/spritesheet.png') -163px -2px no-repeat;
+    background: url("../img/spritesheet.png") -163px -2px no-repeat;
 }
 
 .filter input[type="checkbox"]:disabled + label::before {
@@ -565,11 +570,11 @@ h3 {
     left: 0;
     width: 22px;
     height: 22px;
-    background: url('../img/spritesheet.png') -42px -2px no-repeat;
+    background: url("../img/spritesheet.png") -42px -2px no-repeat;
 }
 
 .filter input[type="radio"]:checked + label::before {
-    background: url('../img/spritesheet.png') -82px -2px no-repeat;
+    background: url("../img/spritesheet.png") -82px -2px no-repeat;
 }
 
 .filter input[type="radio"]:disabled + label::before {
@@ -796,6 +801,133 @@ h3 {
 }
 
 
+/*-------- modal content  ----------*/
 
+.modal-content {
+    width: 300px;
+    padding: 50px 80px;
+    background: #f8f5f2 url("../img/catalog-pattern-noise.png");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 120px;
+    margin-left: -230px;
+    color: #000;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+    z-index: 100;
+/*    display: none;*/
+}
 
+.modal-content-close {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    cursor: pointer;
+    background: url("../img/spritesheet.png") 8px 6px no-repeat;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
 
+.modal-content h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+.modal-content p {
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 236px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    padding-right: 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #000;
+    outline: none;
+    background: #f9f6f3;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.login-form input.icon-user {
+    background: url("../img/user.png") 260px 14px no-repeat; 
+}
+
+.login-form input.icon-password {
+    background: url("../img/locked.png") 260px 14px no-repeat;
+}
+
+.login-form .restore {
+    float: right;
+    color: #000;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-form input[type="checkbox"] {
+    display: none;
+}
+
+.login-form input[type="checkbox"] + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.login-form input[type="checkbox"] + label:hover {
+    color: #663d15;
+}
+
+.login-form input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../img/spritesheet.png") -123px -2px no-repeat;
+}
+
+.login-form input[type="checkbox"]:checked + label::before {
+    background: url("../img/spritesheet.png") -163px -2px no-repeat;
+}
+
+/*--------  map  ----------*/
+
+.modal-content-map {
+    display: block;  /* временно показываем карту */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    margin-left: -390px;
+    margin-top: -287.5px;
+    border: 7px solid white;
+    background: #e9e5dc url("img/map.png");
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
+    z-index: 50;
+}
