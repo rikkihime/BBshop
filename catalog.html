@@ -1,200 +1,224 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"  rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-    <header class="main-header oline">
-        <div class="container clearfix oline">
-            <nav class="main-navigation">
-                <ul>
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="info.html">Информация</a>
-                    </li>
-                    <li>
-                        <a href="news.html">Новости</a>
-                    </li>
-                    <li>
-                        <a href="price-list.html">Прайс-лист</a>
-                    </li>
-                    <li class="active">
-                        <a href="catalog.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                </ul>           
-            </nav>
-            <div class="user-block">
-                <a href="#" class="login">Вход</a>
-            </div>
-        </div>  
-    </header>
-
-    <div class="crumbs-header container clearfix oline">
-        <h2>Средства для ухода</h2>
-        <ul class="breadcrumbs">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="catalog.html">Магазин</a>
-            </li>
-            <li>
-                <span>Средства для ухода</span>
-            </li>
-        </ul>
-    </div>
-
-    <div class="container clearfix oline">
+   
+    <head>
        
-        <aside class="filter">
-            <form action="" method="get">
-
-                <h3 class="filter-h3-1">Производители:</h3>
-
-                    <input type="checkbox" id="chech-1" name="check-brands" checked>
-                    <label for="check-1">Baxter of california</label>
-
-                    <input type="checkbox" id="check-2" name="check-brands">
-                    <label for="check-2">Mr natty</label>
-
-                    <input type="checkbox" id="check-3" name="check-brands" checked>
-                    <label for="check-3">Suavecito</label>
-
-                    <input type="checkbox" id="check-4" name="check-brands">
-                    <label for="check-4">Malin+goetz</label>
-
-                    <input type="checkbox" id="check-5" name="check-brands">
-                    <label for="check-5">Murray's</label>
-
-                    <input type="checkbox" id="check-6" name="check-brands" disabled>
-                    <label for="check-6">American crew</label>
-
-                <h3 class="filter-h3-2">Группы товаров:</h3>
-
-
-                    <input type="radio" id="radio-1" name="party-goods" checked>
-                    <label for="radio-1">Бритвенные принадлежности</label>
-
-                    <input type="radio" id="radio-2" name="party-goods">
-                    <label for="radio-2">Средства для ухода</label>
-
-                    <input type="radio" id="radio-3" name="party-goods">
-                    <label for="radio-3">Аксессуары</label>
-
-                <button class="btn filter-btn" type="submit">Показать</button>
-
-            </form>
-        </aside>
-
-        <div class="products clearfix oline">
-
-            <div class="product">
-                <a href="catalog-item.html">
-                    <img class="prod-picture" src="pict/prod-picture1.jpg" width="220" height="165" alt="Набор для путешествий &laquo;Baxter Of California&raquo;">
-                    <header class="product-title">Набор для путешествий <span>&laquo;Baxter Of California&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">2 900 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>
-            </div>
-
-            <div class="product">
-                <a href="#">
-                    <img class="prod-picture" src="pict/prod-picture2.jpg" width="220" height="165" alt="Увлажняющий кондиционер &laquo;Baxter Of California&raquo;">
-                    <header class="product-title">Увлажняющий кондиционер <span>&laquo;Baxter Of California&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">750 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>            
-            </div>
-
-            <div class="product">
-                <a href="#">
-                    <img class="prod-picture" src="pict/prod-picture3.jpg" width="220" height="165" alt="Гель для волос &laquo;Sauvecito&raquo;">
-                    <header class="product-title">Гель для волос <span>&laquo;Sauvecito&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">290 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>            
-            </div>
-
-            <div class="product">
-                <a href="#">
-                    <img class="prod-picture" src="pict/prod-picture4.jpg" width="220" height="165" alt="Глина для укладки волос &laquo;American Crew&raquo;">
-                    <header class="product-title">Глина для укладки волос <span>&laquo;American Crew&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">500 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>           
-            </div>
-
-            <div class="product">
-                <a href="#">
-                    <img class="prod-picture" src="pict/prod-picture5.jpg" width="220" height="165" alt="Гель для волос &laquo;American crew&raquo;">
-                    <header class="product-title">Гель для волос <span>&laquo;American crew&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">300 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>           
-            </div>
-
-            <div class="product">
-                <a href="#">
-                    <img class="prod-picture" src="pict/prod-picture6.jpg" width="220" height="165" alt="Набор для бритья &laquo;Baxter Of California&raquo;">
-                    <header class="product-title">Набор для бритья <span>&laquo;Baxter Of California&raquo;</span></header>
-                </a>
-                <div class="price-and-btn clearfix">
-                    <p class="price">3 900 РУБ.</p>
-                    <a href="#" class="to-cart">Купить</a>
-                </div>           
-            </div>
-            <nav class="page-navigation">
-                <a href="#">1</a>
-                <span>2</span>
-                <a href="#">3</a>
-                <a href="#">4</a>
-            </nav>
-        </div>
+        <meta charset="utf-8">
+        <title>Барбершоп «Бородинский»</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"  rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         
-    </div>
-
-
-        
+    </head>
     
+    
+    <body>
+        <header class="main-header oline">
+            <div class="container clearfix oline">
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="info.html">Информация</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="price-list.html">Прайс-лист</a>
+                        </li>
+                        <li class="active">
+                            <a href="catalog.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>           
+                </nav>
+                <div class="user-block">
+                    <a href="#" class="login">Вход</a>
+                </div>
+            </div>  
+        </header>
 
-    <footer class="main-footer footer-shadow">
-        <div class="container clearfix">
-            <section class="footer-contacts">
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            телефон: +7 (495) 666-02-66
-            </section>
-            <section class="footer-social">
-                <p>Давайте дружить!</p>
-                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-            </section>
-            <section class="footer-copyright">
-                <p>Разработано:</p>
-                    <a href="#" class="btn">htmlacademy.ru</a>
-            </section>
+        <div class="crumbs-header container clearfix oline">
+            <h2>Средства для ухода</h2>
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                    <span>Средства для ухода</span>
+                </li>
+            </ul>
         </div>
-    </footer>
-</body>
+
+        <div class="container clearfix oline">
+
+            <aside class="filter">
+                <form action="/echo" method="get">
+
+                    <h3 class="filter-h3-1">Производители:</h3>
+
+                        <input type="checkbox" id="check-1" name="check-brands" checked>
+                        <label for="check-1">Baxter of california</label>
+
+                        <input type="checkbox" id="check-2" name="check-brands">
+                        <label for="check-2">Mr natty</label>
+
+                        <input type="checkbox" id="check-3" name="check-brands" checked>
+                        <label for="check-3">Suavecito</label>
+
+                        <input type="checkbox" id="check-4" name="check-brands">
+                        <label for="check-4">Malin+goetz</label>
+
+                        <input type="checkbox" id="check-5" name="check-brands">
+                        <label for="check-5">Murray's</label>
+
+                        <input type="checkbox" id="check-6" name="check-brands" disabled>
+                        <label for="check-6">American crew</label>
+
+                    <h3 class="filter-h3-2">Группы товаров:</h3>
+
+
+                        <input type="radio" id="radio-1" name="party-goods" checked>
+                        <label for="radio-1">Бритвенные принадлежности</label>
+
+                        <input type="radio" id="radio-2" name="party-goods">
+                        <label for="radio-2">Средства для ухода</label>
+
+                        <input type="radio" id="radio-3" name="party-goods">
+                        <label for="radio-3">Аксессуары</label>
+
+                    <button class="btn filter-btn" type="submit">Показать</button>
+
+                </form>
+            </aside>
+
+            <div class="products clearfix oline">
+
+                <div class="product">
+                    <a href="catalog-item.html">
+                        <img class="prod-picture" src="pict/prod-picture1.jpg" width="220" height="165" alt="Набор для путешествий &laquo;Baxter Of California&raquo;">
+                        <header class="product-title">Набор для путешествий <span>&laquo;Baxter Of California&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">2 900 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#">
+                        <img class="prod-picture" src="pict/prod-picture2.jpg" width="220" height="165" alt="Увлажняющий кондиционер &laquo;Baxter Of California&raquo;">
+                        <header class="product-title">Увлажняющий кондиционер <span>&laquo;Baxter Of California&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">750 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>            
+                </div>
+
+                <div class="product">
+                    <a href="#">
+                        <img class="prod-picture" src="pict/prod-picture3.jpg" width="220" height="165" alt="Гель для волос &laquo;Sauvecito&raquo;">
+                        <header class="product-title">Гель для волос <span>&laquo;Sauvecito&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">290 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>            
+                </div>
+
+                <div class="product">
+                    <a href="#">
+                        <img class="prod-picture" src="pict/prod-picture4.jpg" width="220" height="165" alt="Глина для укладки волос &laquo;American Crew&raquo;">
+                        <header class="product-title">Глина для укладки волос <span>&laquo;American Crew&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">500 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>           
+                </div>
+
+                <div class="product">
+                    <a href="#">
+                        <img class="prod-picture" src="pict/prod-picture5.jpg" width="220" height="165" alt="Гель для волос &laquo;American crew&raquo;">
+                        <header class="product-title">Гель для волос <span>&laquo;American crew&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">300 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>           
+                </div>
+               
+                <div class="product">
+                    <a href="#">
+                        <img class="prod-picture" src="pict/prod-picture6.jpg" width="220" height="165" alt="Набор для бритья &laquo;Baxter Of California&raquo;">
+                        <header class="product-title">Набор для бритья <span>&laquo;Baxter Of California&raquo;</span></header>
+                    </a>
+                    <div class="price-and-btn clearfix">
+                        <p class="price">3 900 РУБ.</p>
+                        <a href="#" class="to-cart">Купить</a>
+                    </div>           
+                </div>
+                <nav class="page-navigation">
+                    <a href="#">1</a>
+                    <span>2</span>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </nav>
+            </div>
+            
+        </div>
+        
+        <footer class="main-footer footer-shadow">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                телефон: +7 (495) 666-02-66
+                </section>
+                <section class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+                    <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+                    <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+                </section>
+                <section class="footer-copyright">
+                    <p>Разработано:</p>
+                        <a href="#" class="btn">htmlacademy.ru</a>
+                </section>
+            </div>
+        </footer>
+        
+        <div class="modal-content">
+
+            <button class="modal-content-close" title="Закрыть">Закрыть</button>
+
+            <h2 class="modal-content-title">Личный кабинет</h2>
+
+            <p>Введите пожалуйста свой логин и пароль.</p>
+
+            <form class="login-form" action="/echo" method="post">
+                <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+                <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+                <input type="checkbox" name="remember" id="remember-me">
+                <label for="remember-me">Запомните меня</label>
+                <a href="#" class="restore">Я забыл пароль!</a>
+                <button type="submit" class="btn">Войти</button>   
+            </form>
+
+        </div>
+        
+        <script src="js/script.js"></script>
+        
+    </body>
+
 </html>
