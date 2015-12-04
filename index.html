@@ -42,7 +42,9 @@
         </header>
 
         <div class="container main-container clearfix oline">
+           
             <div class="logo">Barbershop</div>
+            
             <section class="features-row clearfix">
                 <div class="features-item">
                     <div class="features-title">Быстро</div>
@@ -57,22 +59,25 @@
                     <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
                 </div>
             </section>
+            
             <div class="index-content clearfix">
-                <section class="content-column-left">
+               
+                <div class="content-column-left">
                     <h2 class="content-column-title">Новости</h2>
                     <ul class="news-preview">
                         <li>
                         Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки<br>
-                            <time datetime="2013-09-25">25 сентября</time>
+                            <time datetime="2015-09-25">25 сентября</time>
                         </li>
                         <li>
                         В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды<br>
-                            <time datetime="2013-09-19">19 сентября</time>
+                            <time datetime="2015-09-25">19 сентября</time>
                         </li>
                     </ul>
                     <a href="#" class="btn">Все новости</a>
-                </section>
-                <section class="content-column-right">
+                </div>
+                
+                <div class="content-column-right">
                     <h2 class="content-column-title">Фотогалерея</h2>
                     <div class="gallery">
                         <figure class="gallery-content">
@@ -81,10 +86,13 @@
                         <button class="btn gallery-prev" disabled>Назад</button>
                         <button class="btn gallery-next">Вперед</button>
                     </div>
-                </section>
+                </div>
+                
             </div>
+            
             <div class="index-content clearfix">
-                <section class="content-column-left">
+               
+                <div class="content-column-left">
                     <div class="main-contacts">
                         <h2 class="content-column-title">Контактная информация</h2>
                         <p>
@@ -100,21 +108,24 @@
                         <a href="#" class="btn btn-cont-info open-map">Как проехать</a>
                         <a href="#" class="btn btn-cont-info">Обратная связь</a>
                     </div>
-                </section>
-                <section class="content-column-right">
+                </div>
+                
+                <div class="content-column-right">
                     <div class="appointment-form">
                         <h2 class="content-column-title">Записаться</h2>
                         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                         <form action="/echo" method="post">
-                            <input type="date" name="date" value="" placeholder="Дата">
-                            <input type="time" name="time" value="" placeholder="Время">
+                            <input type="text" name="date" value="" placeholder="Дата">
+                            <input type="text" name="time" value="" placeholder="Время">
                             <input type="text" name="name" value="" placeholder="Ваше имя">
                             <input type="tel" name="phone" value="" placeholder="Телефон">
                             <button type="submit" class="btn">Отправить</button>
                         </form>
                     </div>
-                </section>
+                </div>
+                
             </div>
+            
         </div>
 
         <footer class="main-footer">
@@ -167,7 +178,7 @@
         
         <script src="js/map.js"></script>
         
-        <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YloMyiu98hipHC0ygWYusAK0e8MjtQmA&width=766&height=562&id=yandex-map"></script>
+        <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YloMyiu98hipHC0ygWYusAK0e8MjtQmA&amp;width=766&amp;height=562&amp;id=yandex-map"></script>
         
     </body>
     
